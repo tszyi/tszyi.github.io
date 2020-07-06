@@ -5,6 +5,7 @@ updated: 2020-07-06 11:34:38
 categories: ["Static Site Generators", Hexo]
 tags: [Hexo]
 customurltitle: hexo-basic-helloworld
+comments: true
 ---
 
 Hexo 初入門

@@ -429,13 +429,12 @@ gitalk:
   repo: tszyi.github.io # 你的 Repo 名稱，通常就是網域
   owner: tszyi # blog 擁有者
   adminUser: "['tszyi']" # 管理員用戶
-  id: location.pathname # 頁面ID
-  labels: ['Gitalk']
+  labels: "['Gitalk']"
   language: zh-TW
   perPage: 10 # 每頁多少評論
-  distraction_free_mode: true
+  distractionFreeMode: true
   pagerDirection: last # 有兩種new表示從舊到新；last表示從新到舊
-  accessToken:
+  accessToken: c5ac48cd86485c9a81f2ab3ebefdc38db928a9ae
 
 # Baidu Share
 # Available value:

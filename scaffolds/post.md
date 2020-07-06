@@ -5,4 +5,5 @@ updated: {{ date }}
 categories:
 tags:
 customurltitle:
+comments: true
 ---
