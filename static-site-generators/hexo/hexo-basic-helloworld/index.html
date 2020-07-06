@@ -119,7 +119,7 @@
 
 
 
-  <title>歸檔 | Tszyi</title>
+  <title>Hexo 初入門 | Tszyi</title>
   
 
 
@@ -138,7 +138,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     
@@ -255,80 +255,241 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共計 1 篇文章。 繼續努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/static-site-generators/hexo/hexo-basic-helloworld/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tsz-Yi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tszyi">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/static-site-generators/hexo/hexo-basic-helloworld/" itemprop="url">
-              
-                <span itemprop="name">Hexo 初入門</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Hexo 初入門</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-07-06T11:34:38+08:00"
-              content="2020-07-06 11:34:38" >
-          07-06
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+              <time title="創建於" itemprop="dateCreated datePublished" datetime="2020-07-06T11:34:38+08:00">2020-07-06 11:34:38</time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新於&#58;</span>
+              
+              <time title="更新於" itemprop="dateModified" datetime="2020-07-06T11:34:38+08:00">2020-07-06 11:34:38</time>
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/static-site-generators/" itemprop="url" rel="index">
+                    <span itemprop="name">Static Site Generators</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/static-site-generators/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Hexo 初入門</p>
+<h2 id="安裝"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#安裝" class="headerlink" title="安裝"></a>安裝</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>驗證安裝</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="初始-blog"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#初始-blog" class="headerlink" title="初始 blog"></a>初始 blog</h2><p>指定 folder 為 blog 根目錄。若不代入 folder，則以當前所在位置為 blog 根目錄。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
+
+<h2 id="blog-根目錄下的結構"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#blog-根目錄下的結構" class="headerlink" title="blog 根目錄下的結構"></a>blog 根目錄下的結構</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>_config.yml 為 blog 配置檔。往後以 <em>Hexo 的配置 yaml</em> 稱之，以區別主題裡的 _config.yml</li>
+<li>package.json 為 blog 安裝其他功能的模塊檔</li>
+<li>scaffolds 為存放生成 layout 模板的目錄</li>
+<li>source 為文章、草稿、頁面及其他資源的儲存目錄</li>
+<li>themes 為存放主題的目錄，想要客製化頁面，各種調整都在自己所選裝的主題根目錄內，每個目錄也皆會有 _config.yml</li>
+</ul>
+<h2 id="寫新文章"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#寫新文章" class="headerlink" title="寫新文章"></a>寫新文章</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &lt;文章標題&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="寫草稿"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#寫草稿" class="headerlink" title="寫草稿"></a>寫草稿</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &lt;草稿標題&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="將草稿發布為新文章"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#將草稿發布為新文章" class="headerlink" title="將草稿發布為新文章"></a>將草稿發布為新文章</h2><p>將位於 <code>source/_drafts</code> 的草稿移至 <code>source/_posts</code> 成為新文章</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &lt;草稿標題&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="產生-blog-靜態檔案"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#產生-blog-靜態檔案" class="headerlink" title="產生 blog 靜態檔案"></a>產生 blog 靜態檔案</h2><p>生成完整的靜態檔案至 <code>public</code> 目錄。</p>
+<p>常用於部署前或在本機測試時，需要重新渲染相關靜態資源。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g &lt;選項&gt;</span><br></pre></td></tr></table></figure>
+
+<p>選項：</p>
+<ul>
+<li><code>-d</code> 建置完後佈署 blog</li>
+<li><code>-w</code> 為監視檔案的變化</li>
+<li><code>-f</code> 為強制重新建置</li>
+</ul>
+<h2 id="本機運行-blog"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#本機運行-blog" class="headerlink" title="本機運行 blog"></a>本機運行 blog</h2><p>本指令多用在部署前的測試。</p>
+<p>不代 port 的話，預設埠號為 4000</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s [-p &lt;port&gt;]</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署-blog"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#部署-blog" class="headerlink" title="部署 blog"></a>部署 blog</h2><p>這裡用部署到 GitHub Pages 作為示例。</p>
+<p>先安裝部署插件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>接著修改 Hexo 的配置 yaml 裡的 Deployment 節點</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span> <span class="comment"># 選擇部署方式</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/tszyi/tszyi.github.io.git</span> <span class="comment"># 填上 GitHub Page 庫名</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<p>最後即可用指令 <code>hexo d</code> 來將生成好的靜態檔案部署到 GitHub Pages</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="清理靜態檔案及其他相關資源"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#清理靜態檔案及其他相關資源" class="headerlink" title="清理靜態檔案及其他相關資源"></a>清理靜態檔案及其他相關資源</h2><p>刪除 public 資料夾以及 <code>db.json</code>。</p>
+<p>若 blog 在客製化時效果出 bug，可以使用本指令清掉暫存。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<h2 id="主題安裝"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#主題安裝" class="headerlink" title="主題安裝"></a>主題安裝</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;主題 URL&gt; themes/&lt;主題名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如 <code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+<h2 id="文章預覽添加繼續閱讀功能"><a href="/static-site-generators/hexo/hexo-basic-helloworld/#文章預覽添加繼續閱讀功能" class="headerlink" title="文章預覽添加繼續閱讀功能"></a>文章預覽添加繼續閱讀功能</h2><p>在寫作文章時添加語法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
-    </div>
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
-    <div id="gitalk-container"></div>
 
+  
+
+  
 
         </div>
         
@@ -349,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -420,6 +590,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝"><span class="nav-number">1.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始-blog"><span class="nav-number">2.</span> <span class="nav-text">初始 blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#blog-根目錄下的結構"><span class="nav-number">3.</span> <span class="nav-text">blog 根目錄下的結構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#寫新文章"><span class="nav-number">4.</span> <span class="nav-text">寫新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#寫草稿"><span class="nav-number">5.</span> <span class="nav-text">寫草稿</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#將草稿發布為新文章"><span class="nav-number">6.</span> <span class="nav-text">將草稿發布為新文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#產生-blog-靜態檔案"><span class="nav-number">7.</span> <span class="nav-text">產生 blog 靜態檔案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本機運行-blog"><span class="nav-number">8.</span> <span class="nav-text">本機運行 blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署-blog"><span class="nav-number">9.</span> <span class="nav-text">部署 blog</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清理靜態檔案及其他相關資源"><span class="nav-number">10.</span> <span class="nav-text">清理靜態檔案及其他相關資源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主題安裝"><span class="nav-number">11.</span> <span class="nav-text">主題安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章預覽添加繼續閱讀功能"><span class="nav-number">12.</span> <span class="nav-text">文章預覽添加繼續閱讀功能</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -552,6 +738,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script>
+
+
 
   
 
@@ -586,6 +776,25 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://geektutu.github.io/hexo-theme-geektutu/js/gitalk.min.js"></script>
+
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      repo: 'tszyi.github.io',
+      owner: 'tszyi',
+      admin: ['tszyi'],
+      id: location.pathname,
+      labels: Gitalk,
+      language: 'zh-TW',
+      perPage: 10,
+      distractionFreeMode: 
+      pagerDirection: 'last',
+      accessToken: ''
+    })
+    gitalk.render('gitalk-container')           
+  </script>
 
 
   

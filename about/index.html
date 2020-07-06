@@ -119,7 +119,7 @@
 
 
 
-  <title>歸檔 | Tszyi</title>
+  <title>about | Tszyi</title>
   
 
 
@@ -138,7 +138,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     
@@ -255,80 +255,70 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共計 1 篇文章。 繼續努力。
-      </span>
+	<h1 class="post-title" itemprop="name headline">about</h1>
+
+
+
+</header>
 
       
+      
+      
+      <div class="post-body">
+        
+        
+          <p>自 2017 年 7 月開始步入碼農黯道。首先接觸 Web 開發。</p>
+<p>由於在學期間過於廢宅，以至現職為碼農，副職為社畜。</p>
+<p>礙於腦容量不復以往，需要把知識或是機械式等操作紀錄下來，所以決定籌備撰寫 Blog 紀錄之。但因個人懶散，一直沒有實現承諾，但如今 Blog 正式開張了，希望自己能夠持續學習精進中。</p>
+<p>若文章有誤，望請包含，請不吝指教、告知，感謝各位。</p>
+<h2 id="技術棧"><a href="/about/#技術棧" class="headerlink" title="技術棧"></a>技術棧</h2><ul>
+<li>Web<ul>
+<li>Vue.js</li>
+<li>Java</li>
+<li>Node.js</li>
+</ul>
+</li>
+<li>GUI<ul>
+<li>WinForms（C#）</li>
+</ul>
+</li>
+<li>Data<ul>
+<li>MySQL</li>
+<li>ArangoDB</li>
+</ul>
+</li>
+<li>Virtualization<ul>
+<li>Docker</li>
+<li>K8s</li>
+</ul>
+</li>
+</ul>
 
         
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2020">2020</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/static-site-generators/hexo/hexo-basic-helloworld/" itemprop="url">
-              
-                <span itemprop="name">Hexo 初入門</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-07-06T11:34:38+08:00"
-              content="2020-07-06 11:34:38" >
-          07-06
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
-
       
-
+      
+      
     </div>
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
-    <div id="gitalk-container"></div>
 
+  
+
+  
 
         </div>
         
@@ -349,8 +339,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -420,6 +419,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#技術棧"><span class="nav-number">1.</span> <span class="nav-text">技術棧</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -552,6 +567,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.1"></script>
+
+
 
   
 
@@ -586,6 +605,25 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://geektutu.github.io/hexo-theme-geektutu/js/gitalk.min.js"></script>
+
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      repo: 'tszyi.github.io',
+      owner: 'tszyi',
+      admin: ['tszyi'],
+      id: location.pathname,
+      labels: Gitalk,
+      language: 'zh-TW',
+      perPage: 10,
+      distractionFreeMode: 
+      pagerDirection: 'last',
+      accessToken: ''
+    })
+    gitalk.render('gitalk-container')           
+  </script>
 
 
   
