@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2020-07-02 10:27:19
+type: "about"
 comment: false
 ---
 

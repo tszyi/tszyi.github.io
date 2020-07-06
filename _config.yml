@@ -8,12 +8,12 @@ subtitle: 還不完的技術債，寫不完的筆記
 description: ''
 keywords:
 author: Tsz-Yi
-language: zh-tw
+language: zh-TW
 timezone: Asia/Taipei 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://yoursite.com
 root: /
 permalink: :category/:customurltitle/
 #permalink: :year/:month/:day/:title/
