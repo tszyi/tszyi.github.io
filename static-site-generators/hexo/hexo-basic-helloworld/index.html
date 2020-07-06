@@ -488,8 +488,10 @@
           
 
   
-
+    <div id="gitalk-container"></div>
   
+
+
 
         </div>
         
@@ -779,19 +781,20 @@
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://geektutu.github.io/hexo-theme-geektutu/js/gitalk.min.js"></script>
-
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+  
   <script type="text/javascript">
     var gitalk = new Gitalk({
       repo: 'tszyi.github.io',
       owner: 'tszyi',
       admin: ['tszyi'],
-      id: location.pathname,
-      labels: Gitalk,
+      id: md5(location.pathname),
+      labels: ['Gitalk'],
       language: 'zh-TW',
       perPage: 10,
-      distractionFreeMode: 
+      distractionFreeMode: true,
       pagerDirection: 'last',
-      accessToken: ''
+      accessToken: 'c5ac48cd86485c9a81f2ab3ebefdc38db928a9ae'
     })
     gitalk.render('gitalk-container')           
   </script>
