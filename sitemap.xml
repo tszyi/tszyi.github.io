@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-07-06T23:18:26.200Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-07-06T23:18:19.775Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/static-site-generators/hexo/hexo-helloworld/</loc>
+    
+    <lastmod>2020-07-06T03:34:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/404.html</loc>
+    
+    <lastmod>2020-07-06T01:54:37.966Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2020-07-05T12:36:17.060Z</lastmod>
+    
+  </url>
+  
+</urlset>
