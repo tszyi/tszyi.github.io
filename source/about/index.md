@@ -2,7 +2,7 @@
 title: about
 date: 2020-07-02 10:27:19
 type: "about"
-comment: false
+comments: false
 ---
 
 自 2017 年 7 月開始步入碼農黯道。首先接觸 Web 開發。
