@@ -13,7 +13,7 @@ timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yoursite.com
+url: https://tszyi.github.io
 root: /
 permalink: :category/:customurltitle/
 #permalink: :year/:month/:day/:title/
@@ -109,3 +109,7 @@ search:
   path: search.json
   field: post
   content: true
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
