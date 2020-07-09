@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tszyi.github.io/virtualization/docker/docker-commands-cheat-sheet/</loc>
+    
+    <lastmod>2020-07-08T23:42:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tszyi.github.io/ide/visual-studio-code/visual-studio-code-shortcuts/</loc>
     
     <lastmod>2020-07-07T04:40:52.000Z</lastmod>

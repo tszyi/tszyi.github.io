@@ -199,6 +199,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/virtualization/docker/docker-commands-cheat-sheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tsz-Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tszyi">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/virtualization/docker/docker-commands-cheat-sheet/" class="post-title-link" itemprop="url">Docker 指令速查表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-07-09 07:42:31 07:42:31" itemprop="dateCreated datePublished" datetime="2020-07-09T07:42:31+08:00">2020-07-09 07:42:31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/virtualization/" itemprop="url" rel="index"><span itemprop="name">Virtualization</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/virtualization/docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 列出映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker images</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 下載映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker pull &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 上傳映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker push &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改映像檔標籤</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新舊映像檔都指向同份 image id</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker tag &lt;舊映像檔&gt; &lt;新映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刪除映像檔</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 若有多個映像檔指向同份 image id，則為 Untagged </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker rmi &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 以 Dockerfile 建立映像檔</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> --no-cache 表示不使用已存在的 layer</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker build -t &lt;映像檔&gt; . [--no-cache]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打包成 tar</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 無網路或資安考量下使用</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker save -o &lt;tar檔&gt; &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 載入 tar</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 無網路或資安考量下使用</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker laod -i &lt;tar檔&gt;</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/virtualization/docker/docker-commands-cheat-sheet/" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/ide/visual-studio-code/visual-studio-code-shortcuts/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -496,20 +574,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
