@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tszyi.github.io/build-tool/maven/maven-initial-pom-template/</loc>
+    
+    <lastmod>2020-07-14T23:19:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tszyi.github.io/virtualization/docker/docker-commands-cheat-sheet/</loc>
     
     <lastmod>2020-07-13T04:36:23.730Z</lastmod>
