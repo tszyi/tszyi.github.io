@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #62ff6b;
+  background: #142abe;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2148,14 +2148,6 @@ ul.breadcrumb li + li:last-child {
 .tag-cloud a:hover {
   color: var(--link-hover-color) !important;
 }
-.gt-header a,
-.gt-comments a,
-.gt-popup a {
-  border-bottom: none;
-}
-.gt-container .gt-popup .gt-action.is--active::before {
-  top: 0.7em;
-}
 .search-pop-overlay {
   background: rgba(0,0,0,0);
   height: 100%;
@@ -2569,6 +2561,6 @@ a {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #000;
-  border: 2px solid #cc0;
+  background-color: #e3e3e3;
+  border: 1px solid #909090;
 }
