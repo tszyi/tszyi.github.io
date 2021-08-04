@@ -21,15 +21,23 @@
     var CONFIG = {"hostname":"tszyi.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Tszyi">
-<meta property="og:url" content="https://tszyi.github.io/tags/hexo/index.html">
+  <meta name="description" content="筆記一下 環境準備12345678# 安裝$ npm i -g hexo-cli# 驗證安裝$ hexo version# 初始博客$ hexo init [folder]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 初入門">
+<meta property="og:url" content="https://tszyi.github.io/hello-world/hexo-get-started/index.html">
 <meta property="og:site_name" content="Tszyi">
+<meta property="og:description" content="筆記一下 環境準備12345678# 安裝$ npm i -g hexo-cli# 驗證安裝$ hexo version# 初始博客$ hexo init [folder]">
 <meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://tszyi.github.io/hello-world/hexo-get-started/basic-hexo-workflow.jpg">
+<meta property="article:published_time" content="2020-07-06T03:34:38.000Z">
+<meta property="article:modified_time" content="2020-07-06T03:34:38.000Z">
 <meta property="article:author" content="Tsz-Yi">
+<meta property="article:tag" content="Static Site Generators">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tszyi.github.io/hello-world/hexo-get-started/basic-hexo-workflow.jpg">
 
-<link rel="canonical" href="https://tszyi.github.io/tags/hexo/">
+<link rel="canonical" href="https://tszyi.github.io/hello-world/hexo-get-started/">
 
 
 <script id="page-configurations">
@@ -37,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-TW'
   };
 </script>
 
-  <title>標籤: Hexo | Tszyi</title>
+  <title>Hexo 初入門 | Tszyi</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171806525-1"></script>
     <script>
@@ -194,57 +202,151 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Hexo
-          <small>標籤</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/hello-world/hexo-get-started/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tsz-Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tszyi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo 初入門
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-07-06 11:34:38 11:34:38" itemprop="dateCreated datePublished" datetime="2020-07-06T11:34:38+08:00">2020-07-06 11:34:38</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hello-world/" itemprop="url" rel="index"><span itemprop="name">Hello World</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <p>筆記一下</p>
+<h2 id="環境準備"><a href="/hello-world/hexo-get-started/#環境準備" class="headerlink" title="環境準備"></a>環境準備</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安裝</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm i -g hexo-cli</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 驗證安裝</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo version</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 初始博客</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init [folder]</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>初始完後博客結構為</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>_config.yml 為博客配置檔</li>
+<li>scaffolds 存放生成草稿、文章、頁面模板的目錄</li>
+<li>source 存放文章及靜態資源檔的目錄</li>
+<li>themes 存放主題的目錄</li>
+</ul>
+<p>各種修改、美化、裝插件等操作較常用的檔案是博客配置檔以及主題目錄裡的相關檔案。</p>
+<p>寫文章或寫建立靜態資源則會使用 source 目錄。</p>
+<h2 id="工作流程"><a href="/hello-world/hexo-get-started/#工作流程" class="headerlink" title="工作流程"></a>工作流程</h2><p><img src="/hello-world/hexo-get-started/basic-hexo-workflow.jpg" alt="basic-hexo-workflow"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 寫新文章</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo new post &lt;文章標題&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 生成靜態檔案</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 清除靜態檔及 db.json</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 本機運行</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo s [-p &lt;port&gt;] <span class="comment"># 預設埠號為 4000</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 部署（更新）博客</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
+<p>工作流常重複敲這些指令蠻麻煩的，所以就修改了下博客根目錄下的 package.json，在 script 新增兩個屬性，pre-pub 及 pub：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">      ....</span><br><span class="line">      "pre-pub": "hexo clean &amp;&amp; hexo g &amp;&amp; hexo s -p 18787",</span><br><span class="line">      "pub": "hexo clean &amp;&amp; hexo g &amp;&amp; hexo d"</span><br><span class="line">    &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>隨後一個用來本機預覽，一個用來更新博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 本機預覽</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run pre-pub</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 更新博客</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm run pub</span></span><br></pre></td></tr></table></figure>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
+        
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-06T11:34:38+08:00"
-              content="2020-07-06 11:34:38">
-          07-06
-        </time>
-      </div>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>作者： </strong>Tsz-Yi
+  </li>
+  <li class="post-copyright-link">
+    <strong>文章連結：</strong>
+    <a href="https://tszyi.github.io/hello-world/hexo-get-started/" title="Hexo 初入門">https://tszyi.github.io/hello-world/hexo-get-started/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/hello-world/hexo-get-started/" itemprop="url">
-            <span itemprop="name">Hexo 初入門</span>
-          </a>
-      </div>
 
-    </header>
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/static-site-generators/" rel="tag"><i class="fa fa-tag"></i> Static Site Generators</a>
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/" rel="next" title="Visual Studio 2015 快捷鍵速查表">
+      Visual Studio 2015 快捷鍵速查表 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    <div class="comments" id="comments">
+      <script src="https://utteranc.es/client.js"
+        repo="tszyi/tszyi.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -291,6 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#環境準備"><span class="nav-number">1.</span> <span class="nav-text">環境準備</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作流程"><span class="nav-number">2.</span> <span class="nav-text">工作流程</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

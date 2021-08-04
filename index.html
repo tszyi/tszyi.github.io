@@ -200,7 +200,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/build-tool/maven/maven-initial-pom-template/">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/practical-experience/maven-initial-pom-template/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -214,7 +214,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/build-tool/maven/maven-initial-pom-template/" class="post-title-link" itemprop="url">Maven pom.xml 模板</a>
+            <a href="/practical-experience/maven-initial-pom-template/" class="post-title-link" itemprop="url">Maven pom.xml 模板</a>
         </h2>
 
         <div class="post-meta">
@@ -232,11 +232,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/build-tool/" itemprop="url" rel="index"><span itemprop="name">Build tool</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/build-tool/maven/" itemprop="url" rel="index"><span itemprop="name">Maven</span></a>
+                  <a href="/categories/practical-experience/" itemprop="url" rel="index"><span itemprop="name">Practical experience</span></a>
                 </span>
             </span>
 
@@ -254,7 +250,7 @@
           <p>提供我每次搭建 Maven 專案時，<code>pom.xml</code> 可供參考的模板。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/build-tool/maven/maven-initial-pom-template/" rel="contents">
+              <a class="btn" href="/practical-experience/maven-initial-pom-template/" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -278,7 +274,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/virtualization/docker/docker-commands-cheat-sheet/">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/cheatsheet/docker-command-cheatsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -292,7 +288,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/virtualization/docker/docker-commands-cheat-sheet/" class="post-title-link" itemprop="url">Docker 指令速查表</a>
+            <a href="/cheatsheet/docker-command-cheatsheet/" class="post-title-link" itemprop="url">Docker 指令速查表</a>
         </h2>
 
         <div class="post-meta">
@@ -309,7 +305,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-07-13 12:36:23 12:36:23" itemprop="dateModified" datetime="2020-07-13T12:36:23+08:00">2020-07-13 12:36:23</time>
+                <time title="修改時間：2021-08-04 12:06:39 12:06:39" itemprop="dateModified" datetime="2021-08-04T12:06:39+08:00">2021-08-04 12:06:39</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -317,11 +313,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/virtualization/" itemprop="url" rel="index"><span itemprop="name">Virtualization</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/virtualization/docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a>
+                  <a href="/categories/cheatsheet/" itemprop="url" rel="index"><span itemprop="name">Cheatsheet</span></a>
                 </span>
             </span>
 
@@ -339,7 +331,7 @@
           <h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 列出映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker images</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 下載映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker pull &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 上傳映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker push &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改映像檔標籤</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 新舊映像檔都指向同份 image id</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker tag &lt;舊映像檔&gt; &lt;新映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 刪除映像檔</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 若有多個映像檔指向同份 image id，則為 Untagged </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker rmi &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 以 Dockerfile 建立映像檔</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> --no-cache 表示不使用已存在的 layer</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker build -t &lt;映像檔&gt; . [--no-cache]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 以指定檔名來建立映像檔</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker build -t &lt;映像檔&gt; -f &lt;指定檔名&gt; . [--no-cache]</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 打包成 tar</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 無網路或資安考量下使用</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker save -o &lt;tar檔&gt; &lt;映像檔&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 載入 tar</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 無網路或資安考量下使用</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker laod -i &lt;tar檔&gt;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/virtualization/docker/docker-commands-cheat-sheet/" rel="contents">
+              <a class="btn" href="/cheatsheet/docker-command-cheatsheet/" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -363,7 +355,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/ide/visual-studio-code/visual-studio-code-shortcuts/">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -377,7 +369,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/ide/visual-studio-code/visual-studio-code-shortcuts/" class="post-title-link" itemprop="url">Visual Studio Code 快捷鍵速查表</a>
+            <a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/" class="post-title-link" itemprop="url">Visual Studio Code 快捷鍵速查表</a>
         </h2>
 
         <div class="post-meta">
@@ -395,11 +387,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ide/" itemprop="url" rel="index"><span itemprop="name">IDE</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ide/visual-studio-code/" itemprop="url" rel="index"><span itemprop="name">Visual Studio Code</span></a>
+                  <a href="/categories/cheatsheet/" itemprop="url" rel="index"><span itemprop="name">Cheatsheet</span></a>
                 </span>
             </span>
 
@@ -417,7 +405,7 @@
           <h2 id="基礎"><a href="#基礎" class="headerlink" title="基礎"></a>基礎</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 縮放大小</span><br><span class="line">&#x2F;&#x2F; 需先設置 settings.json &quot;editor.mouseWheelZoom&quot;: true</span><br><span class="line">Ctrl + 滾輪</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/ide/visual-studio-code/visual-studio-code-shortcuts/" rel="contents">
+              <a class="btn" href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -441,7 +429,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/ide/visual-studio-2015/visual-studio-2015-shortcuts/">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -455,7 +443,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/ide/visual-studio-2015/visual-studio-2015-shortcuts/" class="post-title-link" itemprop="url">Visual Studio 2015 快捷鍵速查表</a>
+            <a href="/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/" class="post-title-link" itemprop="url">Visual Studio 2015 快捷鍵速查表</a>
         </h2>
 
         <div class="post-meta">
@@ -473,11 +461,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ide/" itemprop="url" rel="index"><span itemprop="name">IDE</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ide/visual-studio-2015/" itemprop="url" rel="index"><span itemprop="name">Visual Studio 2015</span></a>
+                  <a href="/categories/cheatsheet/" itemprop="url" rel="index"><span itemprop="name">Cheatsheet</span></a>
                 </span>
             </span>
 
@@ -495,7 +479,7 @@
           <h2 id="基礎"><a href="#基礎" class="headerlink" title="基礎"></a>基礎</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 執行</span><br><span class="line">Ctrl + F5</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 縮放大小</span><br><span class="line">Ctrl + 滾輪</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 關閉檔案 Tab</span><br><span class="line">Ctrl + F4</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/ide/visual-studio-2015/visual-studio-2015-shortcuts/" rel="contents">
+              <a class="btn" href="/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -519,7 +503,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/static-site-generators/hexo/hexo-helloworld/">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/hello-world/hexo-get-started/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -533,7 +517,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/static-site-generators/hexo/hexo-helloworld/" class="post-title-link" itemprop="url">Hexo 初入門</a>
+            <a href="/hello-world/hexo-get-started/" class="post-title-link" itemprop="url">Hexo 初入門</a>
         </h2>
 
         <div class="post-meta">
@@ -551,11 +535,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/static-site-generators/" itemprop="url" rel="index"><span itemprop="name">Static Site Generators</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/static-site-generators/hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+                  <a href="/categories/hello-world/" itemprop="url" rel="index"><span itemprop="name">Hello World</span></a>
                 </span>
             </span>
 
@@ -574,7 +554,7 @@
 <h2 id="環境準備"><a href="#環境準備" class="headerlink" title="環境準備"></a>環境準備</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安裝</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm i -g hexo-cli</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 驗證安裝</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo version</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 初始博客</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init [folder]</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/static-site-generators/hexo/hexo-helloworld/" rel="contents">
+              <a class="btn" href="/hello-world/hexo-get-started/" rel="contents">
                 閱讀全文 &raquo;
               </a>
             </div>
@@ -667,13 +647,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分類</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>

@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tszyi.github.io/build-tool/maven/maven-initial-pom-template/</loc>
+    <loc>https://tszyi.github.io/cheatsheet/docker-command-cheatsheet/</loc>
+    
+    <lastmod>2021-08-04T04:06:39.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tszyi.github.io/practical-experience/maven-initial-pom-template/</loc>
     
     <lastmod>2020-07-14T23:19:28.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tszyi.github.io/virtualization/docker/docker-commands-cheat-sheet/</loc>
-    
-    <lastmod>2020-07-13T04:36:23.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://tszyi.github.io/ide/visual-studio-code/visual-studio-code-shortcuts/</loc>
+    <loc>https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/</loc>
     
     <lastmod>2020-07-07T04:40:52.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://tszyi.github.io/ide/visual-studio-2015/visual-studio-2015-shortcuts/</loc>
+    <loc>https://tszyi.github.io/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/</loc>
     
     <lastmod>2020-07-07T03:42:45.000Z</lastmod>
     
@@ -44,7 +44,7 @@
   </url>
   
   <url>
-    <loc>https://tszyi.github.io/static-site-generators/hexo/hexo-helloworld/</loc>
+    <loc>https://tszyi.github.io/hello-world/hexo-get-started/</loc>
     
     <lastmod>2020-07-06T03:34:38.000Z</lastmod>
     

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="ap5Mx_cRh_ZHz-QXUNYKBwPMf7kcu51cajaFSsY4d5s">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tszyi.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="基礎123&#x2F;&#x2F; 縮放大小&#x2F;&#x2F; 需先設置 settings.json &quot;editor.mouseWheelZoom&quot;: trueCtrl + 滾輪">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Studio Code 快捷鍵速查表">
+<meta property="og:url" content="https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/index.html">
+<meta property="og:site_name" content="Tszyi">
+<meta property="og:description" content="基礎123&#x2F;&#x2F; 縮放大小&#x2F;&#x2F; 需先設置 settings.json &quot;editor.mouseWheelZoom&quot;: trueCtrl + 滾輪">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2020-07-07T04:40:52.000Z">
+<meta property="article:modified_time" content="2020-07-07T04:40:52.000Z">
+<meta property="article:author" content="Tsz-Yi">
+<meta property="article:tag" content="IDE">
+<meta property="article:tag" content="Visual Studio Code">
+<meta property="article:tag" content="keyboard shortcuts">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>Visual Studio Code 快捷鍵速查表 | Tszyi</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171806525-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171806525-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tszyi</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">還不完的技術債，寫不完的筆記</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tsz-Yi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tszyi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Visual Studio Code 快捷鍵速查表
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2020-07-07 12:40:52 12:40:52" itemprop="dateCreated datePublished" datetime="2020-07-07T12:40:52+08:00">2020-07-07 12:40:52</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/cheatsheet/" itemprop="url" rel="index"><span itemprop="name">Cheatsheet</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">閱讀次數：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="基礎"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#基礎" class="headerlink" title="基礎"></a>基礎</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 縮放大小</span><br><span class="line">&#x2F;&#x2F; 需先設置 settings.json &quot;editor.mouseWheelZoom&quot;: true</span><br><span class="line">Ctrl + 滾輪</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="編輯"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#編輯" class="headerlink" title="編輯"></a>編輯</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 刪除一行或多行</span><br><span class="line">Ctrl + Shift + K</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 移動單字</span><br><span class="line">Ctrl + 方向鍵</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 註解選取行</span><br><span class="line">Ctrl + K + C </span><br><span class="line">Ctrl + &#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 取消註解選取行</span><br><span class="line">Ctrl + K + U</span><br><span class="line">Ctrl + &#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 多行選取</span><br><span class="line">Ctrl + Alt + 上下方向鍵</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 行數超過畫面時換行 Wrap&#x2F;Un Wrap</span><br><span class="line">Alt + Z</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 縮排</span><br><span class="line">&#x2F;&#x2F; 選取一行或多行的情況下</span><br><span class="line">Tab</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 反縮排</span><br><span class="line">&#x2F;&#x2F; 選取一行或多行的情況下</span><br><span class="line">Shift + Tab</span><br></pre></td></tr></table></figure>
+
+<h2 id="Refactor"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#Refactor" class="headerlink" title="Refactor"></a>Refactor</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 側邊欄 - Explorer 檔案重新命名</span><br><span class="line">F2</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 格式化</span><br><span class="line">Alt + Shift + F</span><br></pre></td></tr></table></figure>
+
+<h2 id="畫面移動"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#畫面移動" class="headerlink" title="畫面移動"></a>畫面移動</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 移至檔案首行</span><br><span class="line">Ctrl + Home</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 移至檔案最後一行</span><br><span class="line">Ctrl + End</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 向上捲動</span><br><span class="line">Alt + PgUp</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 向下捲動</span><br><span class="line">Alt + PgDn</span><br></pre></td></tr></table></figure>
+
+<h2 id="程式相關"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#程式相關" class="headerlink" title="程式相關"></a>程式相關</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 摺疊檔案所有 &#123; &#125;</span><br><span class="line">Ctrl + K + 0</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 展開檔案所有 &#123; &#125;</span><br><span class="line">Ctrl + K + J</span><br></pre></td></tr></table></figure>
+
+<h2 id="檔案管理"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#檔案管理" class="headerlink" title="檔案管理"></a>檔案管理</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 新檔案</span><br><span class="line">Ctrl + N</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 開啟檔案</span><br><span class="line">Ctrl + O</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 切換頁籤</span><br><span class="line">Ctrl + Tab</span><br><span class="line">    &#x2F;&#x2F; 反方向切換頁籤</span><br><span class="line">    Ctrl + Shift + Tab</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 往左切換頁籤</span><br><span class="line">Ctrl + PgUp</span><br><span class="line">    &#x2F;&#x2F; 往右切換頁籤</span><br><span class="line">    Ctrl + PgDn</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 關閉檔案</span><br><span class="line">Ctrl + W</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 分割當前檔案到其他 Group</span><br><span class="line">Ctrl + \</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Group 移動</span><br><span class="line">Ctrl + K + 左右方向鍵</span><br></pre></td></tr></table></figure>
+
+<h2 id="搜尋-取代"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#搜尋-取代" class="headerlink" title="搜尋/取代"></a>搜尋/取代</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 當前檔案搜尋字串</span><br><span class="line">Ctrl + F</span><br><span class="line">    &#x2F;&#x2F; 下一個</span><br><span class="line">    F3</span><br><span class="line">    &#x2F;&#x2F; 上一個</span><br><span class="line">    Shift + F3</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 當前檔案取代字串</span><br><span class="line">Ctrl + H</span><br><span class="line">    &#x2F;&#x2F; 下一個</span><br><span class="line">    Enter</span><br><span class="line">    &#x2F;&#x2F; 全部取代</span><br><span class="line">    Ctrl + Alt + Enter</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; workspace 搜尋字串</span><br><span class="line">Ctrl + Shift + F</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; workspace 取代字串</span><br><span class="line">Ctrl + Shift + H</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他視窗"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#其他視窗" class="headerlink" title="其他視窗"></a>其他視窗</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 展開側邊欄 - Explorer</span><br><span class="line">Ctrl + Shift + E</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 展開側邊欄 - 外掛</span><br><span class="line">Ctrl + Shift + X</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 摺疊已展開的側邊欄</span><br><span class="line">Ctrl + B</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Markdown 預覽</span><br><span class="line">Ctrl + K V</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 開啟 Visual Studio Code 命令視窗</span><br><span class="line">Ctrl + Shift + P</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 開啟&#x2F;關閉 Terminal 視窗</span><br><span class="line">Ctrl + &#96;</span><br></pre></td></tr></table></figure>
+
+<h2 id="參考"><a href="/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/#參考" class="headerlink" title="參考"></a>參考</h2><p><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" rel="noopener">Keyboard shortcuts for Windows</a></p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>作者： </strong>Tsz-Yi
+  </li>
+  <li class="post-copyright-link">
+    <strong>文章連結：</strong>
+    <a href="https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/" title="Visual Studio Code 快捷鍵速查表">https://tszyi.github.io/cheatsheet/visual-studio-code-keyboard-shortcuts-cheatsheet/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/ide/" rel="tag"><i class="fa fa-tag"></i> IDE</a>
+              <a href="/tags/visual-studio-code/" rel="tag"><i class="fa fa-tag"></i> Visual Studio Code</a>
+              <a href="/tags/keyboard-shortcuts/" rel="tag"><i class="fa fa-tag"></i> keyboard shortcuts</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/cheatsheet/visual-studio-2015-keyboard-shortcuts-cheatsheet/" rel="prev" title="Visual Studio 2015 快捷鍵速查表">
+      <i class="fa fa-chevron-left"></i> Visual Studio 2015 快捷鍵速查表
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/cheatsheet/docker-command-cheatsheet/" rel="next" title="Docker 指令速查表">
+      Docker 指令速查表 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="comments">
+      <script src="https://utteranc.es/client.js"
+        repo="tszyi/tszyi.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基礎"><span class="nav-number">1.</span> <span class="nav-text">基礎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#編輯"><span class="nav-number">2.</span> <span class="nav-text">編輯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Refactor"><span class="nav-number">3.</span> <span class="nav-text">Refactor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#畫面移動"><span class="nav-number">4.</span> <span class="nav-text">畫面移動</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程式相關"><span class="nav-number">5.</span> <span class="nav-text">程式相關</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#檔案管理"><span class="nav-number">6.</span> <span class="nav-text">檔案管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜尋-取代"><span class="nav-number">7.</span> <span class="nav-text">搜尋&#x2F;取代</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他視窗"><span class="nav-number">8.</span> <span class="nav-text">其他視窗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#參考"><span class="nav-number">9.</span> <span class="nav-text">參考</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tsz-Yi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tszyi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tszyi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tsz-Yi</span>
+</div>
+
+<span id="timeDate">載入天數...</span>
+<span id="times">載入時分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/02/2020 08:54:09");//此處修該建站時間
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已運行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小時 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="訪客總數">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="總瀏覽次數">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
